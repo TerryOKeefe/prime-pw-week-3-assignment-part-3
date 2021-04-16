@@ -32,6 +32,18 @@ console.log(supplyChanges);
 //    - if the value is negative, format the log as 'Part count -x.'
 console.log('6. Showing supplyChanges...');
 
+for ( i in supplyChanges) {
+  if (supplyChanges[i] > 0){
+    console.log('Added', supplyChanges[i], 'parts');
+  }
+  if (supplyChanges[i] === 0){
+    continue;
+  }
+  if (supplyChanges[i] < 0){
+    console.log('Part count', supplyChanges[i]);
+  }
+}
+
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
